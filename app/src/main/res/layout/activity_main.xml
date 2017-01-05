@@ -17,4 +17,68 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/calendarView" />
+
+    <Button
+        android:text="@string/View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnViewJob2"
+        android:layout_alignLeft="@+id/btnViewJob2"
+        android:layout_alignStart="@+id/btnViewJob2"
+        android:id="@+id/btnViewJob1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/calendarView"
+        android:layout_alignStart="@+id/calendarView"
+        android:layout_toLeftOf="@+id/btnAddJob"
+        android:layout_toStartOf="@+id/btnAddJob"
+        android:hint="@string/NewJob" />
+
+    <Button
+        android:text="@string/addJobbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddJob"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnViewJob2"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/NoJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAddJob"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:id="@+id/dayJob2"
+        android:layout_toLeftOf="@+id/btnViewJob1"
+        android:layout_toStartOf="@+id/btnViewJob1"
+        android:layout_below="@+id/btnViewJob1" />
+
+    <TextView
+        android:text="@string/NoJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarView"
+        android:layout_alignStart="@+id/calendarView"
+        android:id="@+id/dayJob1"
+        android:layout_toLeftOf="@+id/btnViewJob1"
+        android:layout_toStartOf="@+id/btnViewJob1"
+        android:layout_alignTop="@+id/btnViewJob1"
+        android:layout_above="@+id/btnViewJob2" />
 </RelativeLayout>
